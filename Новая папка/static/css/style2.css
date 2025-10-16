@@ -288,22 +288,24 @@ nav a {
   width: 425px;
   height: 200px;
   border-radius: 20px;
- 
-  
- 
   display: flex;
   justify-content: center;
-  align-items: center;       
-  
-  text-align: center;       
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
- 
-  
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .Contener-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 .dashed-line {
   width: 75%;
@@ -533,7 +535,7 @@ nav a {
 
 
 .checkbox-custom::after {
-  content: url('checkmark.svg');
+  content: url('Img/checkmark.svg');
   font-size: 20px;
   color: #8971df;
   opacity: 0;
