@@ -1,0 +1,123 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      background: linear-gradient(135deg, #b3e5fc, #f8bbd0);
+      min-height: 100vh;
+      
+     
+    }
+.main{display: flex;
+      justify-content: center;
+      align-items: center;}
+    .profile-card {
+      width: 100%;
+      max-width: 1020px;
+      background: white;
+      border-radius: 133px;
+      padding: 60px 40px;
+  
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-card h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: #000;
+    }
+
+    .info-row {
+    
+     
+      align-items: center;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px dashed #ddd;
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .label {
+      font-family: 'Pacifico', cursive;
+      font-size: 24px;
+      color: #000;
+      flex: 1;
+
+    }
+
+    .value {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      color: #000;
+      background: #dadc f2;
+      border: 2.8px solid #000;
+      border-radius: 30px;
+      padding: 4px 20px;
+      text-align: center;
+      min-width: 80px;
+      white-space: nowrap;
+      margin-left: 20px;
+    }
+
+    .btn {
+      background: #dadc f2;
+      border: 2.8px solid #000;
+      border-radius: 30px;
+      padding: 4px 20px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      color: #000;
+      cursor: pointer;
+      margin-left: 20px;
+      transition: background 1s;
+      -webkit-transition: background 1s;
+      -moz-transition: background 1s;
+      -ms-transition: background 1s;
+      -o-transition: background 1s;
+}
+
+    .btn:hover {
+      background: #c0c2e0;
+      transform: translateY(5px);
+      -webkit-transform: translateY(5px);
+      -moz-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+      -o-transform: translateY(5px);
+}
+
+    @media (max-width: 600px) {
+      .profile-card {
+        border-radius: 40px;
+        padding: 30px 20px;
+      }
+
+      .profile-card h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .label, .value, .btn {
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+      }
+
+      .value, .btn {
+        text-align: center;
+      }
+    }
