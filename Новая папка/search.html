@@ -28,49 +28,74 @@
     </nav>
   </header>
   <main>
-     <div class="search-container">
-        <input type="text" class="search-input" placeholder="Срочный поиск">
+    
+    <div class="search-container">
+     
+    <div class="search-btn">
+       <div class="search-link-div"><input type="text" name="" placeholder="Срочный поиск" class="search-link"></div>
+     
+      <button class="find-search">Найти</button>
+    </div>
+   
+        
+
+     
+       <div class="filter">
+        <div class="filter-sh"> </div>
+        <img class="icone-fileter" src="static/Img/filter.png" alt="">
         <div class="filter-tag">
+
             Собака
             <span class="close">×</span>
-        </div>
-        <button class="search-btn">Найти</button>
+        </div></div>
+        
+        
     </div>
 
    
-    <div class="results-table">
-        <div class="table-header">
-            <div>Вид</div>
-            <span></span>
-            <div>Фото</div>
-            <div>Описание</div>
-            <div>Клеймо</div>
-            <div>Район</div>
-            <div>Дата находки</div>
-            <div>Контакт</div>
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell">Собака</div>
-            <span></span>
-            <div class="table-cell"><div class="photo-placeholder">Фото</div></div>
-            <div class="table-cell">Найдена возле парка Горького, бегала одна, испуганная.</div>
-            <div class="table-cell">Есть (номер: АБ-123)</div>
-            <div class="table-cell">Центральный район</div>
-            <div class="table-cell">12.10.2025</div>
-            <div class="table-cell">+7 (999) 123-45-67</div>
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell">Собака</div>
-            <div class="table-cell"><div class="photo-placeholder">Фото</div></div>
-            <div class="table-cell">Обнаружена в подъезде, без ошейника, но с клеймом.</div>
-            <div class="table-cell">Есть (номер: ВГ-456)</div>
-            <div class="table-cell">Заречный район</div>
-            <div class="table-cell">08.10.2025</div>
-            <div class="table-cell">+7 (912) 345-67-89</div>
-        </div>
-    </div>
+   <div class="table-wrapper">
+    <table>
+      <div class="sh">
+         <thead>
+      <tr>
+        <th>Вид</th>
+        <th>Фото</th>
+        <th>Описание</th>
+        <th>Клеймо</th>
+        <th>Район</th>
+        <th>Дата находки</th>
+        <th>Контакт</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Вид">Собака</td>
+        <td data-label="Фото" class="photo-cell">
+          <div class="photo-placeholder">Фото</div>
+        </td>
+        <td data-label="Описание">Найдена возле парка Горького, бегала одна.</td>
+        <td data-label="Клеймо">Есть (АБ-123)</td>
+        <td data-label="Район">Центральный</td>
+        <td data-label="Дата находки">12.10.2025</td>
+        <td data-label="Контакт">+7 (999) 123-45-67</td>
+      </tr>
+      <tr>
+        <td data-label="Вид">Кошка</td>
+        <td data-label="Фото" class="photo-cell">
+          <div class="photo-placeholder">Фото</div>
+        </td>
+        <td data-label="Описание">Сидела в подъезде, испуганная.</td>
+        <td data-label="Клеймо">Нет</td>
+        <td data-label="Район">Заречный</td>
+        <td data-label="Дата находки">08.10.2025</td>
+        <td data-label="Контакт">+7 (912) 345-67-89</td>
+      </tr>
+    </tbody>
+   </div>
+    
+      
+     
+  </table>
   </main>
    
      <footer>
