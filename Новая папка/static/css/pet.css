@@ -1,0 +1,105 @@
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Oswald";
+            background: linear-gradient(135deg, #C0F0FF, #FFC0E0);
+            min-height: 100vh;
+           
+        }
+        main{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            backdrop-filter: blur(8.6px);
+   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.52));
+            position: relative;
+        }
+
+        .hed {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .pet-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .pet-card {
+            width: 50%;
+            height: 220px;
+            background: #e6d8f5;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .info-column {
+            flex: 1;
+        }
+
+        .info-label {
+
+            font-weight: 500;
+            color: #8972DF;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 16px;
+            margin-left: 10px;
+        }
+        .info-description{
+           font-size: 16px;
+            color: #000;
+            margin-bottom: 90px;
+            margin-left: 10px;
+            
+            }
+        .info-description p{
+            position: absolute;
+            width: 70%;
+        }
+        @media (max-width: 768px) {
+            .pet-cards {
+                flex-direction: column;
+                gap: 15px;
+            }
+             .pet-card {
+                width: 100%;
+                height: 150px;
+            }
+
+            .info-section {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
